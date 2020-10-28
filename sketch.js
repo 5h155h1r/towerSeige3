@@ -142,8 +142,8 @@ async function getTime(){
    var response = await fetch("http://worldtimeapi.org/api/ip");
    var jsonResponse = await response.json();
    var datetime = jsonResponse.datetime;
-   //var hour = datetime.slice(11, 13);
-   var hour = 07
+   var hour = datetime.slice(11, 13);
+   //var hour = 07
    console.log(hour);
    if(hour >= 06 && hour<= 19){
      bg ="#FFDB00"
